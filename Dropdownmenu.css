@@ -1,6 +1,91 @@
 .dd {
 	position: relative;
 	display: inline-block;
+}
+.dd-button {
+	padding: 25px 7px;
+	background: #173459;
+	border: none;
+	width: auto;
+	color: #f8f9f9;
+	border-radius: 10px;
+	outline: none;
+	transition: 1s;
+	font-size: x-large;
+}
+.dd-content {
+	position: absolute;
+	display: none;
+	width: 250px;
+	box-shadow: 0px 15px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+	border-radius: 20px;
+}
+.dd:hover > .dd-content {
+	display: inline;
+}
+.dd-content > #menu {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	transition: 0.5s;
+}
+.dd-content > #menu:hover {
+	background: rgba(14,0,199,1);
+	border-radius: 14px;
+}
+.dd-button:hover {
+	background: #0B00C2;
+}
+#ndd {
+	position: absolute;
+	left: 200px;
+	display: none;
+	width: 250px;
+	box-shadow: 0px 15px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+	border-radius: 20px;
+	background: white;
+}
+#menu:hover > #ndd {
+	display: inline;
+}
+#ndd > a {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+#ndd > a:hover {
+	color: #f8f9f9;
+	background: rgba(14,0,199,1);
+	border-radius: 14px;
+	font-size: 30px;
+	padding: 9.5px;
+	transition: 0.5s;
+}
+p.menu {
+	margin-left: 20px;
+	width: box-width;
+}
+#menu:hover > p {
+	color: white;
+	margin: 14.2545px;
+	font-size: 30px;
+	transition: 0.5s;
+}
+#phone {
+	display: none;
+}
+.fourth:hover > #phone {
+	display: block;
+	font-size: 20px;
+	line-height: 18px;
+}
+/* .dd {
+	position: relative;
+	display: inline-block;
 	padding: 5px
 }
 .dd-button {
@@ -99,4 +184,4 @@
 }
 p {
 	width: 100%;
-}
+} */
